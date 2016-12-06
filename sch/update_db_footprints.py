@@ -8,7 +8,7 @@ import sys
 import sqlite3
 import re
 
-parser = argparse.ArgumentParser('This script updates the footprint and other fields of sch files using a database as input')
+parser = argparse.ArgumentParser(description='This script updates the footprint and other fields of sch files using a database as input')
 parser.add_argument('sch_file', nargs='+')
 parser.add_argument('--db_file', help='filename of the database', action='store', required=True)
 args = parser.parse_args()
